@@ -1,0 +1,114 @@
+:root{
+    --dark-violet:#38184b;
+    --violet: #51246B;
+    --light-violet:#B250EB;
+    --very-light-violet:#e6d3f1;
+    --gray: #65656e;
+    --white: #fff;
+}
+
+*{
+    margin: 0 ;
+    padding: 0 ;
+
+}
+
+body{
+    font-family: cursive;
+    background-color: var(--violet);
+}
+
+.logo{
+    width: 200px;
+   display: flex;
+  margin: 50px auto 0 auto;
+
+}
+
+h1{
+    margin-top: 100px;
+    color: var(--very-light-violet);
+    text-align: center;
+}
+
+form{
+    
+    width: 400px;
+    margin: 45px auto;
+    text-align: center;
+}
+
+
+/*------------------ FORM INPUT -----------------*/
+
+/* seleccionamos el tipo con type=text para decirle que queremos personalizar el texto que se escribe alli */
+form input[type='text']{
+    background-color: var(--violet);
+    color: var(--very-light-violet);
+    border-style: none;
+    font-size: 1.5em;
+    
+}
+/* modificamos el place ober usando psudoelementos */
+form input[type='text']::placeholder{
+    color:var(--very-light-violet);
+}
+/* Utilizamos una pseoduo clase para quitar el focus que hace cuando le damos click */
+form input[type='text']:focus{
+    outline: none;
+    background-color: var(--dark-violet);
+}
+
+
+/*-------------------- Boton SUMBIT------------- */
+form input[type='submit']{
+font-size: 2em;
+width: 40px;
+height: 40px;
+border-radius: 35%;
+border-style: none;
+color: var(--violet);
+
+}
+
+form input[type='submit']:hover{
+    background-color: var(--light-violet);
+    cursor: pointer;
+    color: var(--very-light-violet);
+}
+
+
+/*-------------------- lISTA DE TAREAS --------------*/
+.list-container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.task-container{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 16px;
+    border-radius: 4px;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+.closeBtn{
+    width: 20px;
+    height: 20px;
+}
+
+.closeBtn:hover{
+    cursor: pointer;
+}
+
+/* STATS */
+#stats{
+    margin-top: 25px;
+    font-size: 1.3em;
+    color: var(--very-light-violet);
+    text-align: center;
+}

@@ -1,0 +1,161 @@
+:root {
+  --color-primary:#396596;
+  --color-secundary:#5698E3;
+  --color-three:#fff;
+  --color-fourth:#96660B;
+  --color-five:#000000;
+  --color-bg-operator:#0C53B0;
+  --color-bgdark-operator:#4D0D85;
+  --color-bgdark-lightoperator:#7E850D;
+  --color-bgdark-number:#9880AD;
+}
+
+* {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Silkscreen", cursive;
+}
+
+body {
+  font-family: "Silkscreen", cursive;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secundary));
+}
+
+.textos {
+  box-shadow: 0 0 30px var(--color-three);
+  text-align: center;
+  position: relative;
+  top: 110px;
+  transition: all 1s ease;
+}
+.textos:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.calculator {
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px var(--color-five);
+  background-color: var(--color-three);
+  /*  &.dark{
+   background-color: var(--color-five);
+   box-shadow: 0 0 30px var(--color-three);
+       #display{
+           color: var(--color-bgdark-operator);
+       }
+       .btn-number{
+           color: var(--color-five);
+           background-color: var(--color-bgdark-number);
+       }
+       .btn-operator{
+           background-color: var(--color-bgdark-lightoperator);
+       }
+       button#Clear, button#Equal{
+           background-color:var(--color-bgdark-operator) ;
+       }
+
+   } */
+}
+
+#display {
+  font-size: 3rem;
+  color: #0C53B0;
+  margin: 0 10px;
+  height: 6.5rem;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+button#Clear, button#Equal {
+  font-size: 1.2em;
+  background-color: var(--color-fourth);
+  color: var(--color-three);
+}
+button#Clear button#Clear-last, button#Equal button#Clear-last {
+  font: 1.2rem;
+  background-color: var(--color-bg-operator);
+  color: var(--color-three);
+}
+
+.btn-number {
+  font-size: 1.5rem;
+  background-color: #000000;
+  color: var(--color-three);
+}
+
+.btn-operator {
+  color: var(--color-three);
+  background-color: var(--color-bg-operator);
+  font-size: 1.5rem;
+}
+
+.btn-equal {
+  background-color: var(--color-fourth);
+}
+
+.btn-operator {
+  font-size: 1.5rem;
+}
+
+.btn-equal {
+  height: 7.6rem;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: var(--color-three);
+  z-index: -1;
+}
+
+.theme-toggler .active {
+  color: #fff;
+}
+.theme-toggler .active::before {
+  background-color: #fff;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+button:hover {
+  transform: scale(1.1);
+}/*# sourceMappingURL=estilos.css.map */

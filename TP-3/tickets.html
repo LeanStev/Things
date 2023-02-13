@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Conf BS AS - Tickets</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Pacifico&family=Shadows+Into+Light&family=Spline+Sans+Mono:wght@300&display=swap" rel="stylesheet">
+   
+   
+   
+
+  <body>
+    
+  <!------- NAVBAR --------->
+  <!-- <nav>
+ <div class="navbar">
+    <div class="navbar__container">   
+        <p>Conf Bs As</p>
+        <div class="navbar__items">
+            <a href="#" class="navbar__item">La conferencia</a>
+            <a href="#" class="navbar__item">Los oderadores</a>
+            <a href="#" class="navbar__item">El lugar y la fecha</a>
+            <a href="#" class="navbar__item" id="active">Conviértete en oderador</a>
+            <a href="#" class="navbar__item" id="buyTicket">Comprar tickets</a>
+        </div>
+    </div>
+ </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand m5" href="#"><img src="src/codoacodo.png" alt="">Conf BS.AS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-5">
+            <a class="nav-link  " href="#">La conferencia
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link " href="#">Los oradores</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="#">El lugar</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link" href="#">Conviertete en orador</a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link active" href="#" style="color: rgb(253, 234, 60) ;">Comprar tickets</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav>
+    <!---------- NAVBAR -------->
+
+    <!-------- MAIN ---------->
+
+<main class="main">
+    <div class="main__container">
+    <div class="descuento-y-precio__container">
+        <div class="descuento-y-precio">
+            <div class="descuento__container">
+                <div class="descuento__item">
+                    <p><strong >Estudiante</strong></p>
+                    <P>Tienen un descuento</P>
+                    <p>80%</p>
+                    <p class="descuento__item__disable">*Presentar documentación</p>
+                </div>
+                <div class="descuento__item">
+                    <p><strong >Trainee</strong></p>
+                    <P>Tienen un descuento</P>
+                    <p>50%</p>
+                    <p class="descuento__item__disable">*Presentar documentación</p>
+                </div>
+                <div class="descuento__item" id="descuento__item__active">
+                    <p><strong >Junior</strong></p>
+                    <P>Tienen un descuento</P>
+                    <p>15%</p>
+                    <p class="descuento__item__disable">*Presentar documentación</p>
+                </div>
+                
+            </div>
+            <div class="descuento__text">
+                <p>VENTA</p>
+                <h1>VALOR DE TICKET $200</h1>
+            </div>
+        </div>
+    </div>
+
+        <!-- MAIN-FORM -->
+    <div class="form__container__main">
+    <div class="form__container" id="form__container">
+        <form class="form" id="Form" action="">
+            <div class="form__nombre-y-apellido">
+                <input id="formNombre" type="text" placeholder="Nombre" >
+                <input id="formApellido" type="text" placeholder="Apellido">
+            </div>
+
+            <input id="formEmail" type="email" placeholder="Correo">
+            <div class="form__cantidad-y-categoria__container">
+            <div class="form__cantidad-y-categoria">
+               
+                <div>
+                    <label for="formCantidad">Cantidad:</label>
+                    <input id="formCantidad" type="number" placeholder="Cantidad">
+                </div>
+                <div>
+                    <label for="formCategoria">Categoria/Descuento:</label>
+                    <input id="formCategoria" type="text" placeholder="Digite su categoria">
+                    
+                </div>
+            </div>  
+            </div>
+          
+
+            <div class="form__total">
+                <p class="form__total__text" id="total"> </p>
+            </div>
+            <div class="form__btn" id="form__btn">
+              <button type="submit" id="btnSubmit">Resumen</button>
+              <button type="submit" id="btnBorrar" >Borrar</button>
+            </div>
+          </form>
+
+    </div>
+</div>
+   
+        <!-- MAIN-FORM -->  
+    </div>
+   
+</main> 
+
+    <!-------- MAIN ---------->
+
+    <footer>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-25">
+          <div class="container-fluid ">
+           
+            <div class="collapse navbar-collapse" id="navbarColor02">
+              <ul class="navbar-nav me-auto ">
+                <li class="nav-item ">
+                  <a class="nav-link active" href="#">Preguntas frecuentes
+                    <span class="visually-hidden">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contactanos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Prensa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Conferencias</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Terminos y condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Privacidad</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Estudiantes</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </footer>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>     
+<!-- STEVENS -->                                                              <!-- STEVENS -->                                                      <!-- STEVENS -->  
+
+
+
+
